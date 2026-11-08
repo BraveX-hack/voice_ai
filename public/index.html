@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Voice AI - Transcription</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <header class="header">
+            <h1>VOICE<span>AI</span></h1>
+            <p>Votre assistant vocal intelligent</p>
+        </header>
+
+        <section class="visualizer">
+            <canvas id="orb"></canvas>
+            <div class="status">
+                <span class="status-dot"></span>
+                <p id="statut">En attente de connexion</p>
+            </div>
+        </section>
+
+        <section class="controls">
+            <h2>Transcription vocale</h2>
+            <p class="description">
+                Parlez naturellement, votre voix sera transcrite en temps réel.
+            </p>
+            <div class="buttons">
+                <button id="btn-demarrer" class="btn-start">
+                    <span>▶</span> Démarrer
+                </button>
+                <button id="btn-stoper" class="btn-stop">
+                    <span>■</span> Arrêter
+                </button>
+            </div>
+        </section>
+
+        <section class="transcription-box">
+            <div class="transcription-header">
+                <h3>Transcription</h3>
+                <span class="live">LIVE</span>
+            </div>
+            <p id="transcription">
+                Votre transcription apparaîtra ici...
+            </p>
+        </section>
+
+        <footer>
+            Powered by WebSocket & Deepgram
+        </footer>
+    </main>
+
+    <script src="./js/orb.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
